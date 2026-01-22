@@ -4,22 +4,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Krishna Priyanka | Portfolio</title>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#objective">Objective</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#strengths">Strengths</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
   <header class="hero">
-    <img src="./profile.jpg" alt="Krishna Priyanka" class="profile-pic" />
-    <h1>Krishna Priyanka Garikapati</h1>
-    <p>IT Programming Student | Web Developer</p>
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Krishna Priyanka" class="profile-pic" />
+      <h1>Krishna Priyanka Garikapati</h1>
+      <p class="subtitle">IT Programming Student | Halifax, NS</p>
+      <p class="contact">
+        📞 902-989-8272 |
+        ✉️ <a href="mailto:w0502117@nscc.ca">w0502117@nscc.ca</a> |
+        🔗 <a href="https://linkedin.com/in/krishna-priyanka" target="_blank">LinkedIn</a>
+      </p>
+    </div>
   </header>
 
-  <section class="content">
-    <h2>About Me</h2>
-    <p>
-      Motivated IT Programming student with hands-on experience in web development,
-      programming, and system administration.
-    </p>
-  </section>
+  <main class="container">
+    <!-- Objective -->
+    <section id="objective" class="section light">
+      <h2>Objective</h2>
+      <p>
+        Motivated IT Programming student with hands-on experience in software development,
+        databases, and web applications. Seeking a co-op or internship to apply programming,
+        data handling, and problem-solving skills in real-world technical projects.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section dark">
+      <h2>Technical Skills</h2>
+      <ul class="grid">
+        <li><strong>Programming:</strong> Python, Java, JavaScript, C, SQL</li>
+        <li><strong>Web:</strong> HTML, CSS, React.js</li>
+        <li><strong>Backend:</strong> Spring Boot, REST APIs</li>
+        <li><strong>Databases:</strong> MariaDB, HSQLDB</li>
+        <li><strong>Tools:</strong> Git, GitHub, VMware, IntelliJ, CLion, VS Code</li>
+        <li><strong>OS:</strong> Windows, Linux (Ubuntu)</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section light">
+      <h2>Education</h2>
+      <p><strong>Diploma – Information Technology Programming</strong></p>
+      <p>Nova Scotia Community College (NSCC), Halifax</p>
+      <p>Expected Graduation: April 2026</p>
+      <p>
+        <strong>Relevant Coursework:</strong>
+        Data Fundamentals, Logic & Programming (Python), Website Development,
+        Client-Side Programming (JavaScript), Programming in C,
+        Object-Oriented Programming (Java), Operating Systems (Linux)
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section dark">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>Digital Inventory & Restock System</h3>
+        <ul>
+          <li>Spring Boot backend application for inventory tracking</li>
+          <li>Low-stock alerts using scheduled background tasks</li>
+          <li>REST APIs with Spring MVC and Spring Data JPA</li>
+          <li>HSQLDB in-memory database</li>
+        </ul>
+        <p class="skills-used">Java • Spring Boot • REST • JPA • HSQLDB</p>
+      </div>
+
+      <div class="card">
+        <h3>BookNook – Book Management App</h3>
+        <ul>
+          <li>Full-stack Spring Boot web application</li>
+          <li>CRUD operations with MVC architecture</li>
+          <li>REST endpoints and database integration</li>
+        </ul>
+        <p class="skills-used">Java • Spring Boot • MVC • SQL • GitHub</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section light">
+      <h2>Professional Experience</h2>
+
+      <div class="card">
+        <h3>Bio Sample Operator II – Cellcarta</h3>
+        <p class="date">May 2023 – Present</p>
+        <ul>
+          <li>Process and manage biological samples with high data accuracy</li>
+          <li>Maintain detailed documentation and tracking systems</li>
+          <li>Collaborate with cross-functional teams</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Team Lead – Cellcarta</h3>
+        <p class="date">Feb 2019 – May 2023</p>
+        <ul>
+          <li>Led teams and managed project timelines</li>
+          <li>Prepared reports and trained new staff</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section dark">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Microsoft Azure Fundamentals (AZ-900)</li>
+      </ul>
+    </section>
+
+    <!-- Strengths -->
+    <section id="strengths" class="section light">
+      <h2>Additional Strengths</h2>
+      <ul class="grid">
+        <li>Strong problem-solving skills</li>
+        <li>Excellent communication and teamwork</li>
+        <li>Quick learner</li>
+        <li>Experience in regulated environments</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Krishna Priyanka Garikapati</p>
+  </footer>
 </body>
 </html>
