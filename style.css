@@ -36,13 +36,28 @@ body {
 }
 
 .navbar a {
+  position: relative;
   color: white;
   text-decoration: none;
   font-weight: 600;
+  padding-bottom: 4px;
 }
 
-.navbar a:hover {
-  color: #ffeb3b;
+/* Animated underline */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #ffeb3b;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after {
+  width: 100%;
 }
 
 /* Fix anchor offset for fixed navbar */
@@ -147,7 +162,7 @@ li {
   margin-bottom: 0.4rem;
 }
 
-/* Grid – Skills & Strengths */
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -155,7 +170,6 @@ li {
   margin-top: 1rem;
 }
 
-/* Grid items styled as cards */
 .grid li {
   list-style: none;
   background: white;
@@ -165,18 +179,23 @@ li {
   line-height: 1.5;
 }
 
+/* Hover lift */
+.card,
+.grid li {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.grid li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
 /* Footer */
 .footer {
   text-align: center;
   padding: 1.5rem;
   color: #555;
-}
-
-/* Large screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1100px;
-  }
 }
 
 /* Responsive */
@@ -192,5 +211,14 @@ li {
   .profile-pic {
     width: 130px;
     height: 130px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    padding: 5rem 1rem 3rem;
   }
 }
